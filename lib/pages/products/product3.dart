@@ -15,7 +15,19 @@ class _Product3State extends State<Product3> {
         appBar: AppBar(
           title: Text('Product 3'),
         ),
-        body: Column(children: []),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 200),
+            child: Column(children: [
+              Container(
+                child: Text("Product ID: 1003\nProduct Type: Napkin\nTotal Capacity: 30\nStock Available: 20\n",
+                style: TextStyle(
+                  fontSize: 30
+                ),)
+              )
+            ]),
+          ),
+        ),
       ),
     );
   }

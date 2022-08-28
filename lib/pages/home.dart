@@ -37,10 +37,10 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 5),
               Expanded(
                 child: ListView.builder(
-                  itemCount: entries.length,
+                  itemCount: product.length,
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: const EdgeInsets.symmetric(
@@ -60,68 +60,68 @@ class Home extends StatelessWidget {
                             );
                           },
                           child: SizedBox(
-                              height: 270,
+                              height: 150,
                               child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
-                                    SizedBox(
-                                      height: 200,
-                                      child: Stack(children: [
-                                        Container(
-                                          // foregroundDecoration: BoxDecoration(
-                                          //     image: DecorationImage(
-                                          //   image: AssetImage(
-                                          //       'assets/images/${entries[index]}'),
-                                          //   fit: BoxFit.fitWidth,
-                                          // )),
-                                          child: Center(
-                                            child: Text("${entries[index]}"),
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          /*child: Align(
-                                            alignment: Alignment.topRight,
-                                            child: Container(
-                                              height: 35,
-                                              width: 35,
-                                              decoration: const BoxDecoration(
-                                                  color: Color.fromARGB(
-                                                      95, 0, 0, 0),
-                                                  shape: BoxShape.circle),
-                                              child: Padding(
-                                                padding: const EdgeInsets.only(
-                                                    right: 10.0),
-                                                child: IconButton(
-                                                  icon: Icon(
-                                                    angerselections[index]
-                                                        ? Icons
-                                                            .favorite_border_sharp
-                                                        : Icons.favorite_sharp,
-                                                    color:
-                                                        angerselections[index]
-                                                            ? Colors.white
-                                                            : Colors.red,
-                                                    size: 20,
-                                                  ),
-                                                  onPressed: () {
-                                                    setState(() {
-                                                      angerselections[index] =
-                                                          !angerselections[
-                                                              index];
-                                                    });
-                                                  },
-                                                ),
-                                              ),
-                                            ),
-                                          ),*/
-                                        ),
-                                      ]),
-                                    ),
+                                    // SizedBox(
+                                    //   height: 30,
+                                    //   child: Stack(children: [
+                                    //     Container(
+                                    //       // foregroundDecoration: BoxDecoration(
+                                    //       //     image: DecorationImage(
+                                    //       //   image: AssetImage(
+                                    //       //       'assets/images/${entries[index]}'),
+                                    //       //   fit: BoxFit.fitWidth,
+                                    //       // )),
+                                    //       child: Center(
+                                    //         child: Text("${entries[index]}"),
+                                    //       ),
+                                    //     ),
+                                    //     Padding(
+                                    //       padding: const EdgeInsets.all(8.0),
+                                    //       /*child: Align(
+                                    //         alignment: Alignment.topRight,
+                                    //         child: Container(
+                                    //           height: 35,
+                                    //           width: 35,
+                                    //           decoration: const BoxDecoration(
+                                    //               color: Color.fromARGB(
+                                    //                   95, 0, 0, 0),
+                                    //               shape: BoxShape.circle),
+                                    //           child: Padding(
+                                    //             padding: const EdgeInsets.only(
+                                    //                 right: 10.0),
+                                    //             child: IconButton(
+                                    //               icon: Icon(
+                                    //                 angerselections[index]
+                                    //                     ? Icons
+                                    //                         .favorite_border_sharp
+                                    //                     : Icons.favorite_sharp,
+                                    //                 color:
+                                    //                     angerselections[index]
+                                    //                         ? Colors.white
+                                    //                         : Colors.red,
+                                    //                 size: 20,
+                                    //               ),
+                                    //               onPressed: () {
+                                    //                 setState(() {
+                                    //                   angerselections[index] =
+                                    //                       !angerselections[
+                                    //                           index];
+                                    //                 });
+                                    //               },
+                                    //             ),
+                                    //           ),
+                                    //         ),
+                                    //       ),*/
+                                    //     ),
+                                    //   ]),
+                                    // ),
                                     Center(
                                       child: Padding(
                                         padding: const EdgeInsets.fromLTRB(
-                                            14.0, 20, 0, 10),
+                                            14.0, 50, 0, 10),
                                         child: Align(
                                             alignment: Alignment.center,
                                             child: Text(
@@ -147,12 +147,12 @@ class Home extends StatelessWidget {
 }
 
 
-final List<String> entries = <String>[
-  'Product Id 1',
-  'Product Id 2',
-  'Product Id 3',
-  'Product Id 4',
-];
+// final List<String> entries = <String>[
+//   'Product Id 10',
+//   'Product Id 20',
+//   'Product Id 30',
+//   'Product Id 40',
+// ];
 
 final List<String> product = <String>[
   'Product Id 1',

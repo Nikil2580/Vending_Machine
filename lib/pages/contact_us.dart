@@ -16,7 +16,7 @@ class Contact extends StatelessWidget {
           title: const Text(
             "Contact Us",
             style: TextStyle(
-                color: Colors.pink,
+                color: Colors.white,
                 fontFamily: 'Roboto',
                 fontSize: 18.0,
                 fontWeight: FontWeight.w800),
