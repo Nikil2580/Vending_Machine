@@ -10,13 +10,11 @@ class Product4 extends StatefulWidget {
 class _Product4State extends State<Product4> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Product 4'),
-        ),
-        body: Column(children: []),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Product 4'),
       ),
+      body: Column(children: []),
     );
   }
 }
