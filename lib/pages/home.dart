@@ -43,7 +43,13 @@ class Home extends StatelessWidget {
                     color: Colors.pink),
               ))),
               GestureDetector(
-                onTap: () => Home(),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return Home();
+                    },
+                  ));
+                },
                 child: ListTile(
                   leading: Icon(
                     Icons.home,
@@ -53,7 +59,13 @@ class Home extends StatelessWidget {
                 ),
               ),
               GestureDetector(
-                onTap: () => About(),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return About();
+                    },
+                  ));
+                },
                 child: ListTile(
                   leading: Icon(
                     Icons.accessibility_new,
@@ -63,7 +75,13 @@ class Home extends StatelessWidget {
                 ),
               ),
               GestureDetector(
-                onTap: () => Contact(),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return Contact();
+                    },
+                  ));
+                },
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,

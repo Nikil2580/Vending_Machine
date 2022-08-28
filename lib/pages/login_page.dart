@@ -17,7 +17,7 @@ class _LoginState extends State<Login> {
         backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
-          "Welcome to Queen Warrior",
+          "Welcome to Queen Warriors",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             color: Colors.pink,
